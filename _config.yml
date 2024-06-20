@@ -1,0 +1,120 @@
+# Site settings
+title: wang luo
+SEOTitle: Wang - Just do it, dont stop
+header-img: img/home-bg-bluestars.jpg
+email: luoangl3@gmail.com
+description: "Stop mental exhaustion, just do it"
+keyword: "True grit, Think outside the box"
+url: "https://wangluoangl3.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/wangluoangl3/wangluoangl3.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Knowledge is power. You need to study if you want to get ahead in life."
+sidebar-avatar: /img/about-lw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+# weibo_username:     qiubaiying
+zhihu_username:       wang-qing-tian-shu-34
+github_username:     wangluoangl3
+# facebook_username:    henry.h.jiang.5
+# jianshu_username:   e71990ada2fd
+# twitter_username:   qiubaiying
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 6a11cab9f46fe57e56a1                            #生成的clientID
+  clientSecret: 27ac9ec88d1ecd4c819f7423c95b4ca66e54156a    #生成的clientSecret
+  repo:  wangluoangl3.github.io    #仓库名称
+  owner: wangluoangl3    #github用户名
+  admin: wangluoangl3
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+# ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+# ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+# ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# 友情链接，请尽量不要删除
+friends: [
+    {
+        title: "GPTs",
+        href: "https://chatgpt.com/gpts"
+    },{
+        title: "Poe",
+        href: "https://poe.com/"
+    },{
+        title: "阿水AI6.0",
+        href: "https://ai.ashuiai.com/chat/8659766157772805"
+    },{
+        title: "Data Analysis",
+        href: "https://wesmckinney.com/book/"
+    },{
+        title: "交通运输工程学院",
+        href: "https://stte.csu.edu.cn/"
+    },{
+        title: "研究生教育管理系统",
+        href: "http://gms.csu.edu.cn/stu/logon"
+    }
+]
