@@ -1,8 +1,8 @@
-Welcome to Globien Project！
+Welcome to homepage of wangluo！
 
-格罗比言·全球语 (Globien) 是新一代人造国际语。她传承世界语 (Esperanto) 精神，融合中、英、法三大语言，更加简单易学，是更有效的国际沟通桥梁。
+这是是一个关于科研学习的个人主页网站，将会在里面分享相关学习资料，科研感悟及相关的记录。
 
-格罗比言官网 (https://globien.github.io) 由本项目支撑。
+主页网址 (https://wangluoangl3.github.io) 。
 
 ### 您可以 ——
 
@@ -14,10 +14,11 @@ Welcome to Globien Project！
 
 ### 致谢
 
-1. 这个模板是从这里 [BY](https://github.com/qiubaiying/qiubaiying.github.io) fork 的, 感谢作者BY。 
-2. BY的模板应该是从这个模板 [Hux](https://github.com/Huxpro/huxpro.github.io) fork 的, 也一起感谢一下。
-3. 感谢 Jekyll、Github Pages 和 Bootstrap!
+1. 这个模板是从这里 [globien](https://github.com/globien/globien.github.io) fork 的, 感谢作者globien。 
+2. 这个模板是从这里 [BY](https://github.com/qiubaiying/qiubaiying.github.io) fork 的, 感谢作者BY
+3. BY的模板应该是从这个模板 [Hux](https://github.com/Huxpro/huxpro.github.io) fork 的, 也一起感谢一下。
+4. 感谢 Jekyll、Github Pages 和 Bootstrap!
 
 ### License
 
-MIT License, please refer to [LICENSE](https://github.com/globien/globien.github.io/blob/master/LICENSE).
+MIT License, please refer to [LICENSE](https://github.com/wangluoangl3/wangluoangl3.github.io/blob/master/LICENSE).
