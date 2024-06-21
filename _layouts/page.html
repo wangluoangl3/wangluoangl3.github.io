@@ -133,16 +133,6 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            {% if site.csdn_username %}
-                            <li>
-                                <a targert="_blank" href="http://blog.csdn.net/{{ site.csdn_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">CSDN</i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
                             {% if site.twitter_username %}
                             <li>
                                 <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -193,7 +183,16 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            
+                            {% if site.csdn_username %}
+                            <li>
+                                <a targert="_blank" href="http://blog.csdn.net/{{ site.csdn_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-csdn fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}                            
                         </ul>
                         {% if site.email %}
                             <p>✉️ {{site.email}}</p>
