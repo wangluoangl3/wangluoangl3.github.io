@@ -79,6 +79,16 @@
                         </a>
                     </li>
                     {% endif %}
+                    {% if site.csdn_username %}
+                    <li>
+                        <a targert="_blank" href="http://blog.csdn.net/{{ site.csdn_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-csdn fa-stack-1x fa-inverse">CSDN</i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %} 
                     {% if site.linkedin_username %}
                     <li>
                         <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
