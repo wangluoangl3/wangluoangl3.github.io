@@ -60,7 +60,9 @@ kramdown:
 disqus:
   enable: false    #是否开启评论功能
 # Disqus（https://disqus.com/）
-  disqus_username: qiubaiying
+  disqus_username: username
+
+
 
 # Gitalk
 gitalk:
