@@ -2,7 +2,7 @@
 layout: post
 title: Github 使用笔记
 date: 2024-07-03
-catalog: false
+catalog: true
 tags:
     - Git
 ---
