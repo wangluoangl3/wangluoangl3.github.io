@@ -17,19 +17,23 @@ import seaborn as sns
 import numpy as np
 
 # 设置风格
+
 sns.set(style="whitegrid")
 
 # 生成数据
+
 x = np.linspace(0, 10, 100)
 y1 = np.sin(x)
 y2 = np.cos(x)
 
 # 创建图表
+
 plt.figure(figsize=(10, 6))
 plt.plot(x, y1, label="Sine Wave", color="b", linewidth=2)
 plt.plot(x, y2, label="Cosine Wave", color="r", linestyle="--", linewidth=2)
 
 # 添加装饰
+
 plt.fill_between(x, y1, y2, color="gray", alpha=0.1)
 plt.title("Line Plot", fontsize=15)
 plt.xlabel("X-axis", fontsize=12)
