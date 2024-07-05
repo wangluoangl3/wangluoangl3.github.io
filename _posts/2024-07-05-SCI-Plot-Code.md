@@ -37,7 +37,7 @@ plt.ylabel("Y-axis", fontsize=12)
 plt.legend()
 plt.show()
 ```
-![折线图](../img-post/折线图.png)
+<img src="../img-post/折线图.png" alt="折线图">
 
 # 2.散点图
 
@@ -68,7 +68,7 @@ plt.xlabel("X-axis", fontsize=12)
 plt.ylabel("Y-axis", fontsize=12)
 plt.show()
 ```
-![散点图](../img-post/散点图.png)
+<img src="../img-post/散点图.png" alt="散点图">
 
 
 # 3.条形图
@@ -106,7 +106,7 @@ for rect in bar1 + bar2:
 
 plt.show()
 ```
-![条形图](../img-post/条形图.png)
+<img src="../img-post/条形图.png" alt="条形图">
 
 # 4.热力图
 
@@ -127,7 +127,7 @@ sns.heatmap(data, annot=True, fmt=".2f", cmap='coolwarm')
 plt.title("Heatmap", fontsize=15)
 plt.show()
 ```
-![热力图](../img-post/热力图.png)
+<img src="../img-post/热力图.png" alt="热力图">
 
 # 5.箱线图
 
@@ -150,7 +150,7 @@ sns.boxplot(data=data, palette="vlag")
 plt.title("Box Plot", fontsize=15)
 plt.show()
 ```
-![箱线图](../img-post/箱线图.png)
+<img src="../img-post/箱线图.png" alt="箱线图">
 
 # 6.蜘蛛图
 
@@ -189,7 +189,7 @@ plt.title('Enhanced Spider Chart', size=20, color='black', y=1.1)
 plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1))
 plt.show()
 ```
-![蜘蛛图](../img-post/蜘蛛图.png)
+<img src="../img-post/蜘蛛图.png" alt="蜘蛛图">
 
 # 7.双轴图
 
@@ -221,7 +221,7 @@ ax2.set_ylabel('Cosine', color='b')
 plt.title('Dual Axis Plot')
 plt.show()
 ```
-![双轴图](../img-post/双轴图.png)
+<img src="../img-post/双轴图.png" alt="双轴图">
 
 # 8.面积图
 
@@ -250,7 +250,7 @@ plt.xlabel("X-axis", fontsize=12)
 plt.ylabel("Y-axis", fontsize=12)
 plt.show()
 ```
-![面积图](../img-post/面积图.png)
+<img src="../img-post/面积图.png" alt="面积图">
 
 # 9.带状图
 
@@ -281,7 +281,7 @@ plt.ylabel("Y-axis", fontsize=12)
 plt.legend()
 plt.show()
 ```
-![带状图](../img-post/带状图.png)
+<img src="../img-post/带状图.png" alt="带状图">
 
 # 10.等高线图
 
@@ -309,7 +309,7 @@ plt.colorbar(contour)
 plt.title('Contour Plot', fontsize=15)
 plt.show()
 ```
-![等高线图](../img-post/等高线图.png)
+<img src="../img-post/等高线图.png" alt="等高线图">
 
 # 11.极坐标图
 
@@ -334,9 +334,9 @@ ax.plot(theta, r, color='b', linewidth=2)
 plt.title('Polar Plot', fontsize=15)
 plt.show()
 ```
-![极坐标图](../img-post/极坐标图.png)
+<img src="../img-post/极坐标图.png" alt="极坐标图">
 
-# 12.3D曲面图
+# 12. 3D曲面图
 
 ```python
 
@@ -364,9 +364,9 @@ fig.colorbar(surf)
 plt.title('3D Surface Plot', fontsize=15)
 plt.show()
 ```
-![3D曲面图](../img-post/3D曲面图.png)
+<img src="../img-post/3D曲面图.png" alt="3D曲面图">
 
-# 13.3D散点图
+# 13. 3D散点图
 
 ```python
 
@@ -393,9 +393,9 @@ fig.colorbar(scatter)
 plt.title('3D Scatter Plot', fontsize=15)
 plt.show()
 ```
-![3D散点图](../img-post/3D散点图.png)
+<img src="../img-post/3D散点图.png" alt="3D散点图">
 
-# 14.3D条形图
+# 14. 3D条形图
 
 ```python
 import numpy as np
@@ -420,7 +420,7 @@ bars = ax.bar3d(x, y, z, 1, 1, y, shade=True)
 plt.title('3D Bar Plot', fontsize=15)
 plt.show()
 ```
-![3D条形图](../img-post/3D条形图.png)  
+<img src="../img-post/3D条形图.png" alt="3D条形图">
 
 # 15.直方图
 
@@ -446,7 +446,7 @@ plt.xlabel("Value", fontsize=12)
 plt.ylabel("Frequency", fontsize=12)
 plt.show()
 ```
-![直方图](../img-post/直方图.png)
+<img src="../img-post/直方图.png" alt="直方图">
 
 # 16.小提琴图
 
@@ -470,7 +470,7 @@ sns.violinplot(data=data, palette="muted")
 plt.title("Violin Plot", fontsize=15)
 plt.show()
 ```
-![小提琴图](../img-post/小提琴图.png)
+<img src="../img-post/小提琴图.png" alt="小提琴图">
 
 # 17.成对关系图
 
@@ -486,7 +486,7 @@ sns.pairplot(iris, hue="species", palette="muted")
 plt.suptitle("Pair Plot", y=1.02, fontsize=15)
 plt.show()
 ``` 
-![成对关系图](../img-post/成对关系图.png)
+<img src="../img-post/成对关系图.png" alt="成对关系图">
 
 # 18.Facet Grid 图
 
@@ -507,4 +507,4 @@ g.add_legend()
 plt.suptitle("Facet Grid", y=1.02, fontsize=15)
 plt.show()
 ```
-![Facet Grid](../img-post/Facet_Grid.png)
+<img src="../img-post/Facet_Grid.png" alt="Facet Grid">
