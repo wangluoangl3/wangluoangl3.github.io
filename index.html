@@ -83,3 +83,34 @@ And here is another:
     B -->|tcp_456| D[Server2]
 </div>
 
+<div class="mermaid">
+    pie title Pets adopted by volunteers
+
+    "Dogs" : 386
+
+    "Cats" : 85
+
+    "Rats" : 15
+</div>
+
+<div class="mermaid">
+    block-beta
+    columns 3
+    doc>"Document"]:3
+    space down1<[" "]>(down) space
+
+  block:e:3
+          l["left"]
+          m("A wide one in the middle")
+          r["right"]
+  end
+    space down2<[" "]>(down) space
+    db[("DB")]:3
+    space:3
+    D space C
+    db --> D
+    C --> db
+    D --> C
+    style m fill:#d6d,stroke:#333,stroke-width:4px
+</div>
+
