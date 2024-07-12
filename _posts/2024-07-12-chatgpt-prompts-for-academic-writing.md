@@ -70,6 +70,204 @@ Provide 5 keywords for this: [PARAGRAPHS]
 ### Abstract
 
 ```
+Generate an abstract for a scientific paper based on this information for: [PARAGRAPHS]
+```
+
+### Outline
+
+```
+Generate an outline for [TOPIC SENTENCE]
+```
+
+```
+I want to write a journal article about [TOPIC SENTENCE]. Give me an outline for the article that I can use as a starting point.
+```
+
+### Introduction
+
+```
+Come up with an introduction for the following research topic: [TOPIC SENTENCE]
+```
+
+### Literature Review
+
+```
+Conduct a literature review on [TOPIC SENTENCE] and provide review paper references
+```
+
+```
+Provide me with references and links to papers in [PARAPGRAPH]
+```
+
+> **NOTE:** Be careful and double-check article existence. ChatGPT may generate fake references
+
+```
+Summarize the scholarly literature, including in text citations on [PARAGRAPHS]
+```
+
+```
+Write this in standard Harvard referencing [PARAGRAPH]
+```
+
+```
+Convert this [BIBLIOGRAPHY] from MLA to APA style.
+```
+
+```
+Compare and contrast [THEORY1] and [THEORY2] in the context of [RESEARCH DOMAIN]:
+```
+
+### Methodology
+
+```
+Create objectives and methodology for [TOPIC SENTENCE]
+```
+
+```
+Write a detailed methodology for the topic: [TOPIC SENTENCE]
+```
+
+```
+Analyze the strengths and weaknesses of this methodology: [PARAGRAPHS]
+```
+
+```
+Write objectives for this study: [TOPIC SENTENCE]
+```
+
+```
+What are the limitations of using [TOPIC SENTENCE] in [RESEARCH DOMAIN]?
+```
+
+```
+Create a recipe for the methods used in this [PARAGRAPHS]
+```
+
+```
+Suggest interdisciplinary approaches to [TOPIC SENTENCE]
+```
+
+```
+Explain how qualitative/quantitative research methods can be used to address [RESEARCH QUESTIONS]
+```
+
+```
+Recommend best practices for data collection and analysis in [TOPIC SENTENCE]
+```
+
+### Experiments
+
+```
+Design an experiment that [ACTION]
+```
+
+### Results
+
+```
+Write a result section for the following paragraphs. Please write this in the third person. [PARAGRAPHS]
+```
+
+### Discussion
+
+```
+Discuss these results: [RESULT PARAGRAPHS]
+```
+
+### Conclusion
+
+```
+Generate a conclusion for this: [PARAGRAPHS]
+```
+
+```
+Give recommendations and conclusion for: [PARAGRAPHS]
+```
+
+### Future Works
+
+```
+Can you suggest 3 directions for future research on this topic: [PARAGRAPH]]?
+```
+
+## IMPROVING LANGUAGE
+
+```
+Rewrite this paragraph in an academic language: [PARAGRAPH]
+```
+
+```
+Paraphrase the text using more academic and scientific language. Use a neutral tone and avoid repetitions of words and phrases. [PARAGRAPH]
+```
+
+```
+Correct the grammar: [PARAGRAPH]
+```
+
+```
+What do you think of how this paragraph is written?:  [PARAGRAPH]
+```
+
+```
+What 3 points would you suggest to improve this paragraph?: [PARAGRAPH]
+```
+
+```
+Improve the style of my writing? [PARAGRAPHS]
+```
+
+```
+Improve the clarity and coherence of my writing [PARAGRAPHS]
+```
+
+```
+Improve the organization and structure of my paper [PARAGRAPHS]
+```
+
+```
+Provide feedback on this text and suggest areas for improvement [PARAGRAPHS]
+```
+
+```
+Can you improve this paragraph using passive voice: [PARAGRAPH]
+```
+
+```
+Can you improve this paragraph to make it more cohesive? [PARAGRAPH]
+```
+
+```
+Analyze the text below for style, voice, and tone. Using NLP, create a prompt to write a new article in the same style, voice, and tone: [PARAGRAPHS]
+```
+
+```
+Please write a few paragraphs using the following list of points [LIST] 
+```
+
+```
+Give three variations of this sentence: [SENTENCE] 
+```
+
+```
+Write a transition sentence to connect the following two paragraphs: [PARAGRAPH1] [PARAPGRAPH2]
+```
+
+```
+Provide effective transitions between paragraphs [PARAGRAPH1] [PARAGRAPH2]
+```
+
+```
+Rewrite this paragraph as an introduction: [PARAGRAPH]
+```
+
+```
+Rewrite this paragraph as a conclusion: [PARAGRAPH]
+```
+
+```
+Write a counterargument to the following claim: [PARAGRAPH]
+```
+
+```
 Rewrite this in an academic voice: [PARAGRAPH]
 ``` 
 
