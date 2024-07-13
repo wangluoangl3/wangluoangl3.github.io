@@ -12,7 +12,7 @@ github_repo: "https://github.com/wangluoangl3/wangluoangl3.github.io.git" # you 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Knowledge is power. You need to study if you want to get ahead in life."
-sidebar-avatar: /img/about-lw.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
