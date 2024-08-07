@@ -4,8 +4,43 @@ title: Collection
 header-img: "img/post-bg-rwd.jpg"
 catalog: true
 ---
+<style>
+    html,body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        position: absolute;
+        width:100%;
+        height:100%;
+        display: flex;
+    }
+    .directory{
+        min-width: 200px;
+        overflow-y: auto;
+    }
+    .content{
+        flex:1;
+        overflow-y: auto;
+    }
+    #category a{
+        padding: 0 16px;
+        /* font-weight: 500; */
+        color: #383f38;
+        outline: none;
+        text-decoration: none;
+        line-height: 30px;
+    }
+    #category a:hover{
+        background: #d70c0c;
+    }
+</style>
 
-<div class="zh post-container">
+<div class="directory">
+    <div id="category"></div>
+</div>
+<div class="zh post-container content">
     <!-- <H1>Bookmarks</H1> -->
     <DL><p>
         <DT><!--<H3 ADD_DATE="1657688258" LAST_MODIFIED="1722223469" PERSONAL_TOOLBAR_FOLDER="true">Bookmarks bar</H3>-->
@@ -467,3 +502,17 @@ catalog: true
         <DT><A HREF="https://www.7its.com/index.php?m=home&c=View&a=index&aid=11778" ADD_DATE="1704452125">轨迹数据在交通领域的应用_赛文交通网</A>
     </DL><p>
 </div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script>
+    //目录的生成需要等待文章加载完成之后再生成。
+    var padding=[10,20,30,40,50];//不同的标题等级缩进大小
+    $('.content').find('h1,h2,h3,h4,h5').each(function(index,item){
+        var that=$(this);
+        $('<a name="c'+index+'"></a>').insertBefore(that);//插入锚点地址
+        var tagName=that[0].tagName.toLowerCase();
+        var tagIndex=parseInt(tagName.charAt(1))-1;//根据标题等级分类，并设置不同的缩进。
+        $('#category').append($('<a href="#c'+index+'" style="padding-left:'+padding[tagIndex]+'px;display:block;">'+that.text()+'</a>'));
+    });
+</script>
