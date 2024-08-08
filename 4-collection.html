@@ -1,43 +1,44 @@
 ---
+layout: post
 title: Collection
 header-img: "img/post-bg-rwd.jpg"
 ---
 <style>
-    html,body{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
-    .container{
-        position: absolute;
-        width:100%;
-        height:100%;
-        display: flex;
-    }
-    .directory{
-        min-width: 200px;
+    /* 样式可根据需求进行调整 */
+    #sidebar {
+        width: 200px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        bottom: 0;
         overflow-y: auto;
+        background-color: #f8f8f8;
+        padding: 10px;
+        transition: right 0.3s;
     }
-    .content{
-        flex:1;
-        overflow-y: auto;
-    }
-    #category a{
-        padding: 0 16px;
-        /* font-weight: 500; */
-        color: #383f38;
-        outline: none;
+    #sidebar a {
+        display: block;
+        padding: 5px 10px;
         text-decoration: none;
-        line-height: 30px;
+        color: #333;
     }
-    #category a:hover{
-        background: #d70c0c;
+    #sidebar a:hover {
+        background-color: #ddd;
+    }
+    #toggle-btn {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
     }
 </style>
 
-<div class="directory">
-    <div id="category"></div>
-</div>
+<div id="sidebar"></div>
+<div id="toggle-btn">目录</div>
 <div class="zh post-container content">
     <!-- <H1>Bookmarks</H1> -->
     <DL><p>
@@ -502,15 +503,33 @@ header-img: "img/post-bg-rwd.jpg"
 </div>
 
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    //目录的生成需要等待文章加载完成之后再生成。
-    var padding=[10,20,30,40,50];//不同的标题等级缩进大小
-    $('.content').find('h1,h2,h3,h4,h5').each(function(index,item){
-        var that=$(this);
-        $('<a name="c'+index+'"></a>').insertBefore(that);//插入锚点地址
-        var tagName=that[0].tagName.toLowerCase();
-        var tagIndex=parseInt(tagName.charAt(1))-1;//根据标题等级分类，并设置不同的缩进。
-        $('#category').append($('<a href="#c'+index+'" style="padding-left:'+padding[tagIndex]+'px;display:block;">'+that.text()+'</a>'));
+    $(document).ready(function() {
+        var padding = [10, 20, 30, 40, 50]; // 不同的标题等级缩进大小
+        
+        // 查找 .content 内的所有标题标签
+        $('.content').find('h1,h2,h3,h4,h5').each(function(index, item) {
+            var that = $(this); // 当前标题元素
+            // 在标题前插入一个锚点
+            $('<a name="c' + index + '"></a>').insertBefore(that);
+            
+            var tagName = that[0].tagName.toLowerCase(); // 获取标签名并转换为小写
+            var tagIndex = parseInt(tagName.charAt(1)) - 1; // 根据标签等级计算缩进
+            
+            // 在侧边栏添加对应的目录项
+            $('#sidebar').append($('<a href="#c' + index + '" style="padding-left:' + padding[tagIndex] + 'px;">' + that.text() + '</a>'));
+        });
+        
+        // 添加目录显示/隐藏功能
+        $('#toggle-btn').click(function() {
+            var sidebar = $('#sidebar');
+            if (sidebar.css('right') === '0px') {
+                sidebar.css('right', '-200px');
+            } else {
+                sidebar.css('right', '0px');
+            }
+        });
     });
 </script>
