@@ -121,5 +121,8 @@ friends: [
     },{
         title: "研究生教育管理系统",
         href: "http://gms.csu.edu.cn/stu/logon"
+    },{
+        title: "中南大学图书馆",
+        href: "https://lib.csu.edu.cn/"
     }
 ]
