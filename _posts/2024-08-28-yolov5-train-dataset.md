@@ -7,7 +7,7 @@ tags:
   - object detection
 ---
 
-使用yolov5训练自己的数据集，以SDGS数据集为例，参考[^1],[^2],[^3],[^4],[^5]步骤如下：
+使用yolov5训练自己的数据集，以SDGS数据集为例，参考[^1][^2][^3][^4][^5]步骤如下：
 
 [**yolov5源码下载**](https://github.com/ultralytics/yolov5)
 
@@ -40,6 +40,7 @@ yolov5需要的数据集格式为voc格式，将图片和标签文件保存于im
 ## 2.1 划分训练/验证集
 运行下列代码，划分训练集、验证集。
 修改xmlFilePath,saveBasePath为自己的数据集路径，第二个路径若不存在会自己创建。
+
 ```python
 import os
 import random
@@ -167,7 +168,6 @@ for image_set in sets:
         list_file.write('pathto/SDGS/images/%s.jpg\n' % (image_id))
         convert_annotation(image_id)
     list_file.close()
-
 ```
 ## 2.3 创建配置文件
 在项目data文件夹下新建自己的配置文件SDGS.yaml,内容如下，路径为自己的数据集路径，设置类别数，类别名称。注意此处的<font style="微软雅黑" color=pink>names和标签格式转换部分的代码中classes要保持一致</font>.
