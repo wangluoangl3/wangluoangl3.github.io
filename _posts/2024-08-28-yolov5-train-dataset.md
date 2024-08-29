@@ -37,7 +37,9 @@ yolov5需要的数据集格式为voc格式，将图片和标签文件保存于im
 >path/SDGS
 — annotations
 — images
+
 ## 2.1 划分训练/验证集
+
 运行下列代码，划分训练集、验证集。
 修改xmlFilePath,saveBasePath为自己的数据集路径，第二个路径若不存在会自己创建。
 
