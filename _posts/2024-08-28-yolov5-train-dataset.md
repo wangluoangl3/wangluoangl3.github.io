@@ -24,7 +24,7 @@ conda activate yolov5
 （2）安装依赖包
 
 先切换到项目路径
->切换盘： 盘名
+>切换盘： 盘名<br>
 进入盘内路径： cd + 路径
 
 执行安装：
@@ -34,8 +34,8 @@ pip install -r requirements.txt
 
 # 2.数据集准备
 yolov5需要的数据集格式为voc格式，将图片和标签文件保存于images、annotations两个文件夹中，其中annoations中存放xml格式的标签文件。
->path/SDGS
-— annotations
+>path/SDGS<br>
+— annotations<br>
 — images
 
 ## 2.1 划分训练/验证集
@@ -172,7 +172,7 @@ for image_set in sets:
     list_file.close()
 ```
 ## 2.3 创建配置文件
-在项目data文件夹下新建自己的配置文件SDGS.yaml,内容如下，路径为自己的数据集路径，设置类别数，类别名称。注意此处的<font style="微软雅黑" color=pink>names和标签格式转换部分的代码中classes要保持一致</font>.
+在项目data文件夹下新建自己的配置文件SDGS.yaml,内容如下，路径为自己的数据集路径，设置类别数，类别名称。注意此处的<font style="微软雅黑" color=red>names和标签格式转换部分的代码中classes要保持一致</font>.
 ```python
 train: pathto/SDGS/dataSet_path/train.txt
 val: pathto/SDGS/dataSet_path/val.txt
@@ -190,9 +190,9 @@ names: ["aircraft", "oiltank","overpass",'playground']
 修改epochs，batchsize，根据自己的配置来，若报内存溢出就把batch-size调小一点，一般为2的倍数，修改weights为预训练文件路径，修改data为自己的数据配置yaml文件路径，为了防止出错建议全部使用<font style="微软雅黑" color=red>绝对路径</font>。
 # 4.验证
 训练到最后模型会输出在验证集上的评估结果，包括数据集参数、精度参数和模型参数，测试时会另外给出推理速度相关参数。
->数据集参数：'Class', 'Images', 'Instances'
-精度参数：'P', 'R', 'mAP50', 'mAP50-95'
-模型参数： layers, parameters, gradients, GFLOPS
+>数据集参数：'Class', 'Images', 'Instances'<br>
+精度参数：'P', 'R', 'mAP50', 'mAP50-95'<br>
+模型参数： layers, parameters, gradients, GFLOPS<br>
 速度参数：ms pre-process, ms inference, ms NMS per image at shape
 
 修改val.py, parse_opt()中的data, weights, batch-size或使用命令行
